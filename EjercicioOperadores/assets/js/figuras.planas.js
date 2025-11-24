@@ -6,7 +6,7 @@ function areaTriangulo(){
     let b = document.getElementById("baseTri").value;
     let h = document.getElementById("alturaTri").value;
     let resultado = (b * h) / 2;
-    document.getElementById("resTriangulo").innerHTM = "Área = " + resultado;
+    document.getElementById("resTriangulo").innerHTML = "Área = " + resultado;
 }
 
 /**

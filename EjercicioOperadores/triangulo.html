@@ -8,57 +8,69 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 </head>
 
-<body>
-    <header>
-        <h1 class="text-center">Ejercicio funciones</h1>
+<body class="bg-dark">
+
+    <header class="bg-primary text-white text-center py-4 mt-5">
+        <h1 class="fw-bold">Ejercicio funciones</h1>
+        <p class="mb-0">Cálculo de áreas de figuras planas</p>
     </header>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gradient bg-dark fixed-top shadow-lg py-2">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index_2.html">Fig_Sólidas</a>
+            <a class="navbar-brand btn btn-light text-dark rounded-pill shadow px-4 fw-semibold"
+                href="index_2.html">Fig_Sólidas</a>
+            <a class="navbar-brand btn btn-light text-dark rounded-pill shadow px-4 fw-semibold"
+                href="index.html">Fig_Planas</a>
 
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="menu">
-                <ul class="navbar-nav">
-
-                    <li class="nav-item"><a class="nav-link" href="triangulo.html">Triángulo</a></li>
-                    <li class="nav-item"><a class="nav-link" href="paralelogramo.html">Paralelogramo</a></li>
-                    <li class="nav-item"><a class="nav-link" href="rectángulo.html">Rectángulo</a></li>
-                    <li class="nav-item"><a class="nav-link" href="cuadrado.html">Cuadrado</a></li>
-                    <li class="nav-item"><a class="nav-link" href="rombo.html">Rombo</a></li>
-                    <li class="nav-item"><a class="nav-link" href="cometa.html">Cometa</a></li>
-                    <li class="nav-item"><a class="nav-link" href="trapecio.html">Trapecio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="círculo.html">Círculo</a></li>
-
+                <ul class="navbar-nav ms-auto text-center mb-2 mb-lg-0">
+                    <li class="nav-item mx-1"><a class="nav-link" href="triangulo.html">Triángulo</a></li>
+                    <li class="nav-item mx-1"><a class="nav-link" href="paralelogramo.html">Paralelogramo</a></li>
+                    <li class="nav-item mx-1"><a class="nav-link" href="rectángulo.html">Rectángulo</a></li>
+                    <li class="nav-item mx-1"><a class="nav-link" href="cuadrado.html">Cuadrado</a></li>
+                    <li class="nav-item mx-1"><a class="nav-link" href="rombo.html">Rombo</a></li>
+                    <li class="nav-item mx-1"><a class="nav-link" href="cometa.html">Cometa</a></li>
+                    <li class="nav-item mx-1"><a class="nav-link" href="trapecio.html">Trapecio</a></li>
+                    <li class="nav-item mx-1"><a class="nav-link" href="círculo.html">Círculo</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
 
-    <main>
-        <section><img src="" alt=""></section>
+    <main class="container py-5">
 
-        <section>
-            <h2>Área del Triángulo</h2>
+        <section class="bg-secondary p-4 rounded shadow-sm">
 
-            <label for="baseTri">Base (b)</label>
-            <input type="number" id="baseTri" placeholder="Base">
+            <h2 class="text-center mb-4">Área del Triángulo</h2>
 
-            <label for="alturaTri">Altura (h)</label>
-            <input type="number" id="alturaTri" placeholder="Altura">
+            <figure class="text-center py-3">
+                <img src="assets/image/Triangulo.jpg" class="img-fluid rounded shadow-lg" style="max-width:500px;"
+                    alt="Triángulo">
+            </figure>
 
-            <button onclick="areaTriangulo()">Calcular</button>
-            <p id="resTriangulo"></p>
+            <label for="baseTri" class="form-label fw-semibold">Base (b)</label>
+            <input type="number" id="baseTri" class="form-control mb-3" placeholder="Base">
+
+            <label for="alturaTri" class="form-label fw-semibold">Altura (h)</label>
+            <input type="number" id="alturaTri" class="form-control mb-4" placeholder="Altura">
+
+            <button onclick="areaTriangulo()" class="btn btn-primary w-100 mb-3">Calcular</button>
+
+            <p id="resTriangulo" class="alert alert-info text-center">Resultado</p>
         </section>
     </main>
 
     <aside></aside>
 
-    <footer></footer>
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">© 2025 - Figuras planas</p>
+    </footer>
 
     <script text="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
     <script text="text/javascript" src="assets/js/figuras.planas.js"></script>
