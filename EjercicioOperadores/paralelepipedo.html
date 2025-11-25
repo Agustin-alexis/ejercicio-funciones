@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Figuras Solidas</title>
+    <title>Paralelepipedo</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 </head>
 
@@ -16,10 +16,13 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-gradient bg-dark fixed-top shadow-lg py-2">
         <div class="container-fluid">
-            <a class="navbar-brand btn btn-light text-dark rounded-pill shadow px-4 fw-semibold" href="index_2.html">Fig_Sólidas</a>
-            <a class="navbar-brand btn btn-light text-dark rounded-pill shadow px-4 fw-semibold" href="index.html">Fig_Planas</a>
+            <a class="navbar-brand btn btn-light text-dark rounded-pill shadow px-4 fw-semibold"
+                href="index_2.html">Fig_Sólidas</a>
+            <a class="navbar-brand btn btn-light text-dark rounded-pill shadow px-4 fw-semibold"
+                href="index.html">Fig_Planas</a>
 
-            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -38,17 +41,34 @@
 
     <main class="container py-5">
 
-        <section><img src="" alt="triangulo" class="img-fluid"></section>
-
         <section class="bg-white p-4 rounded shadow-sm">
 
-            <h2 class="text-center mb-4">Área</h2>
+            <h2 class="text-center mb-4">Volumen del Paralelepípedo</h2>
+
+            <figure class="text-center py-3">
+                <img src="assets/image/Paralelepipedo.png" class="img-fluid rounded shadow-lg" style="max-width:200px;" alt="Paralelepipedo">
+            </figure>
+
+            <label for="largoP" class="form-label fw-semibold">Largo (l)</label>
+            <input type="number" id="largoP" class="form-control mb-3" placeholder="" step="any">
+
+            <label for="anchoP" class="form-label fw-semibold">Ancho (b)</label>
+            <input type="number" id="anchoP" class="form-control mb-3" placeholder="" step="any">
+
+            <label for="altoP" class="form-label fw-semibold">Alto (h)</label>
+            <input type="number" id="altoP" class="form-control mb-3" placeholder="" step="any">
+
+            <button onclick="volumenParalelepipedo()" class="btn btn-primary w-100 mb-3">Calcular</button>
+            <p id="resParalelepipedo" class="alert alert-info text-center">Resultado</p>
+
         </section>
     </main>
 
     <aside></aside>
 
-    <footer></footer>
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">© 2025 - Figuras Sólidas</p>
+    </footer>
 
     <script text="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
     <script text="text/javascript" src="assets/js/figuras.solidas.js"></script>
